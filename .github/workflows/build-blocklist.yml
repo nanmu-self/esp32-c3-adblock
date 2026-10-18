@@ -21,10 +21,7 @@ jobs:
       - name: Build blocklist
         run: |
           python tools/build_blocklist.py blocklist.bin \
-            https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts \
-            https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/light-onlydomains.txt \
-            https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt \
-            https://easylist-downloads.adblockplus.org/easylistchina.txt
+            https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdomainlite.txt
 
       - name: Publish to release
         uses: softprops/action-gh-release@v2
